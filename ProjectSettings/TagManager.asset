@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Topping
   - Pizza
+  - Arm
+  - Eyeball
+  - Leg
   layers:
   - Default
   - TransparentFX
