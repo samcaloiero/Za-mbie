@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -14,6 +15,8 @@ public class PizzaInfo : MonoBehaviour
     public int eyeballTopping;
     public int legTopping;
 
+
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Eyeball"))
@@ -43,4 +46,6 @@ public class PizzaInfo : MonoBehaviour
        }
         
     }
+
+     
 }

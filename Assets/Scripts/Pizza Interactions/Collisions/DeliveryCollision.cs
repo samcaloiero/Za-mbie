@@ -1,10 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DeliveryCollision : MonoBehaviour
 {
+
+    private PizzaInfo thisPizzaInfo;
+    public TextMeshPro orderText;
+
+    public TextMeshPro deliveryText;
+    private void Awake()
+    {
+        thisPizzaInfo = GetComponent<PizzaInfo>();
+        SetOrderText();
+    }
+
     //This script needs applied to the area where pizzas need delivered to
     private void OnTriggerExit(Collider other)
     {   
@@ -26,9 +38,11 @@ public class DeliveryCollision : MonoBehaviour
         //Checking to see if pizza has proper toppings on it (Idk how to do this)
         CheckToppings(pizza);
         //Checking to see if pizza is baked
-        if (_pizzaInfo.isBaked)
+        if (_pizzaInfo.isBaked && _pizzaInfo.armTopping == thisPizzaInfo.armTopping && _pizzaInfo.eyeballTopping == thisPizzaInfo.eyeballTopping && _pizzaInfo.legTopping == thisPizzaInfo.legTopping)
         {
-            Debug.Log("Pizza Baked and Delivered");
+            Debug.Log("Pizza Baked, cooked properly, and Delivered");
+            deliveryText.text = "Order Complete!";
+            Destroy(pizza);
         }
         else if (_pizzaInfo.isBaked = false)
         {
@@ -38,8 +52,15 @@ public class DeliveryCollision : MonoBehaviour
     }
 
     void CheckToppings(GameObject pizza)
-    {
-        
+    { 
+        PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
     }
+    
+    void SetOrderText()
+    {
+        orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
+                          thisPizzaInfo.legTopping + " Leg Toppings");
+    }
+    
     
 }

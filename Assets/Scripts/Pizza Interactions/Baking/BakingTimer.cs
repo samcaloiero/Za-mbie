@@ -13,7 +13,7 @@ public class BakingTimer : MonoBehaviour
     private float growLength;
     void Start()
     {
-        timerText.text = "test";
+        timerText.text = "Baking Timer";
     }
     
     

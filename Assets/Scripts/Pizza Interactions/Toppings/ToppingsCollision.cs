@@ -18,6 +18,8 @@ public class ToppingsCollision : MonoBehaviour
         {
             //Disable Rigid Body
             Debug.Log("Collision Succesful");
+
+            _rigidbody.detectCollisions = false;
             _rigidbody.isKinematic = true;
             _rigidbody.useGravity = false;
             //Make topping child of pizza
