@@ -25,18 +25,17 @@ public class DeliveryCollision : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Pizza"))
             {
-                ExecuteDelivery(other.gameObject);
+                CheckToppings(other.gameObject);
             }  
         }
     }
 
     //
-    void ExecuteDelivery(GameObject pizza)
+    void CheckToppings(GameObject pizza)
     {
         // Getting access to the pizza info on the pizza collided w/ this box
         PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
         //Checking to see if pizza has proper toppings on it (Idk how to do this)
-        CheckToppings(pizza);
         //Checking to see if pizza is baked
         if (_pizzaInfo.isBaked && _pizzaInfo.armTopping == thisPizzaInfo.armTopping && _pizzaInfo.eyeballTopping == thisPizzaInfo.eyeballTopping && _pizzaInfo.legTopping == thisPizzaInfo.legTopping)
         {
@@ -44,17 +43,13 @@ public class DeliveryCollision : MonoBehaviour
             deliveryText.text = "Order Complete!";
             Destroy(pizza);
         }
-        else if (_pizzaInfo.isBaked = false)
+        else if (_pizzaInfo.isBaked == false)
         {
             Debug.Log("Pizza not baked!");
         }
 
     }
-
-    void CheckToppings(GameObject pizza)
-    { 
-        PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
-    }
+    
     
     void SetOrderText()
     {
