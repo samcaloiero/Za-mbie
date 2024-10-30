@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class IntroSceneManager : MonoBehaviour
 {   
+    //Attach this script to the hat
     
+    //Attach next level scene name here
+    public string nextLevel;
     public SOSceneManager _SoSceneManager;
     // Start is called before the first frame update
     void Start()
@@ -24,5 +27,7 @@ public class IntroSceneManager : MonoBehaviour
         {
             _SoSceneManager.leftHand = false;
         }
+
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
     }
 }
