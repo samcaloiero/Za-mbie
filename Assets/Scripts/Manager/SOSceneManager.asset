@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: SOSceneManager
   m_EditorClassIdentifier: 
   correctPizzasMade: 0
-  scenes: []
+  leftHand: 0
+  rightHand: 0
+  isThereAPizzaOrder: 0
