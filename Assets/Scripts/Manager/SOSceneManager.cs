@@ -6,5 +6,9 @@ public class SOSceneManager : ScriptableObject
 {
     [Tooltip("This should always start at 0")]
     public int correctPizzasMade;
- 
+
+    public bool leftHand;
+
+    public bool rightHand;
+
 }

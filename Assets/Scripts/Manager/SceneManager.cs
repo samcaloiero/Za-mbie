@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SceneManager : MonoBehaviour
@@ -22,12 +23,24 @@ public class SceneManager : MonoBehaviour
     
     private float minutes;
     private float seconds;
-    
+
+
+    public GameObject leftHand;
+
+    public GameObject rightHand;
    
     // Start is called before the first frame update
     void Start()
     {
         _SoSceneManager.correctPizzasMade = 0;
+        if (_SoSceneManager.leftHand = false)
+        {
+            leftHand.SetActive(false);
+        }
+        else if (_SoSceneManager.rightHand = false)
+        {
+            rightHand.SetActive(false);
+        }
     }
 
     // Update is called once per frame

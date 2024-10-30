@@ -1,0 +1,22 @@
+# Blender 4.2.2 LTS MTL File: 'pizza.blend'
+# www.blender.org
+
+newmtl Crust
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd loaf-of-bread-182835505-58a7008c5f9b58a3c91c9a14-3437255893.jpg
+
+newmtl Pizza
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Cheese-Pizza-1186358766.jpg
