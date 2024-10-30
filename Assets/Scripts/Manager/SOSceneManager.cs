@@ -11,4 +11,6 @@ public class SOSceneManager : ScriptableObject
 
     public bool rightHand;
 
+    public bool isThereAPizzaOrder;
+
 }

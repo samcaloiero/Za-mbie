@@ -41,13 +41,14 @@ public class DeliveryCollision : MonoBehaviour
         {
             Debug.Log("Pizza Baked, cooked properly, and Delivered");
             deliveryText.text = "Order Complete!";
-            Destroy(pizza);
+            
         }
         else if (_pizzaInfo.isBaked == false)
         {
             Debug.Log("Pizza not baked!");
         }
-
+        Destroy(pizza);
+        GiveNextOrder();
     }
     
     
@@ -56,6 +57,10 @@ public class DeliveryCollision : MonoBehaviour
         orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
                           thisPizzaInfo.legTopping + " Leg Toppings");
     }
-    
-    
+
+    public void GiveNextOrder()
+    {
+        
+    }
+
 }
