@@ -8,6 +8,6 @@ public class InstantiateItem : MonoBehaviour
     public void SpawnItem()
     {
         Debug.Log("Spawn Pizza");
-        Instantiate(itemToSpawn);
+        Instantiate(itemToSpawn, transform);
     }
 }

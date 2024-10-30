@@ -648,7 +648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &260341700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2535,6 +2535,8 @@ MonoBehaviour:
   losingScene: 
   _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
   minutesTimer: {fileID: 1159376256}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
 --- !u!4 &778062458
 Transform:
   m_ObjectHideFlags: 0
@@ -3657,7 +3659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1026886857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5996,7 +5998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1687663010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6831,7 +6833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1803498655
 BoxCollider:
   m_ObjectHideFlags: 0

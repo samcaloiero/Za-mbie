@@ -30,8 +30,17 @@ public class BakingTimer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pizza"))
         {
-            StartCoroutine(StartTimer(other.gameObject)) ;
+            StartCoroutine(StartTimer(other.gameObject)) ; 
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pizza"))
+        {
+            StartCoroutine(StartTimer(other.gameObject)) ; 
+        }
+        
     }
 
     //This could have functionality to start a timer that ticks up whenever pizza is in the ovens

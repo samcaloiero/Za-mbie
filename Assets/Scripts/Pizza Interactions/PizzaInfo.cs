@@ -19,22 +19,27 @@ public class PizzaInfo : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Eyeball"))
+        if (gameObject.CompareTag("Pizza"))
         {
-            eyeballTopping++;
-            DisableGrab(other.gameObject);
+            if (other.gameObject.CompareTag("Eyeball"))
+            {
+                eyeballTopping++;
+                DisableGrab(other.gameObject);
+            }
+            else if (other.gameObject.CompareTag("Arm"))
+            {
+                armTopping++;
+                DisableGrab(other.gameObject);
+            }
+            else if (other.gameObject.CompareTag("Leg"))
+            {
+                legTopping++;
+                DisableGrab(other.gameObject);
+            }
         }
-        else if (other.gameObject.CompareTag("Arm"))
-        {
-            armTopping++;
-            DisableGrab(other.gameObject);
-        } 
-        else if (other.gameObject.CompareTag("Leg"))
-        {
-            legTopping++;
-            DisableGrab(other.gameObject);
-        }
-        
+
+
+
     }
 
      void DisableGrab(GameObject topping)
