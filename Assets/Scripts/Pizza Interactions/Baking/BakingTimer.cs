@@ -9,12 +9,19 @@ public class BakingTimer : MonoBehaviour
     public int countdownTime = 10;
     public TextMeshPro timerText;
     public GameObject flamesPS;
+    public Material grateMaterial;
+
 
     private float growLength;
     void Start()
     {
         flamesPS.SetActive(false);
         timerText.text = "Baking Timer";
+        
+        //alpha of grate off
+        Color color = grateMaterial.color;
+        color.a = 0;
+        grateMaterial.color = color;
     }
     
     
@@ -40,6 +47,10 @@ public class BakingTimer : MonoBehaviour
         }
         int currentTime = countdownTime;
         flamesPS.SetActive(true);
+        Color color = grateMaterial.color;
+        color.a = 1;
+        grateMaterial.color = color;
+        
         //Getting reference to the specific pizzas is baked variable
         
         while (currentTime > 0)
@@ -59,6 +70,8 @@ public class BakingTimer : MonoBehaviour
                 _pizzaInfo.isBaked = true;
                 timerText.text = "Pizza Baked";
                 flamesPS.SetActive(false);
+                color.a = 0;
+                grateMaterial.color = color;
             }  
         }
      
