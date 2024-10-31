@@ -11433,6 +11433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970885738}
   - component: {fileID: 1970885737}
+  - component: {fileID: 1970885739}
   m_Layer: 0
   m_Name: Scene Manager
   m_TagString: Untagged
@@ -11452,7 +11453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53e9e7e92c47c24ab593ff190a8c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 
+  nextLevel: Cool Scene
   _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
 --- !u!4 &1970885738
 Transform:
@@ -11469,6 +11470,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970885739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970885736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1990625513
 GameObject:
   m_ObjectHideFlags: 0

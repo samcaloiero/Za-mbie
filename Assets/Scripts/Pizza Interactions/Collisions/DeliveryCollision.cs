@@ -9,7 +9,7 @@ public class DeliveryCollision : MonoBehaviour
 
     private PizzaInfo thisPizzaInfo;
     public TextMeshPro orderText;
-
+    public PizzaInfo orderPizzaInfo;
     public TextMeshPro deliveryText;
     public SOSceneManager _SoSceneManager;
     private void Awake()
@@ -31,6 +31,11 @@ public class DeliveryCollision : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        thisPizzaInfo = orderPizzaInfo;
+    }
+
     //
     void CheckToppings(GameObject pizza)
     {
@@ -38,15 +43,15 @@ public class DeliveryCollision : MonoBehaviour
         PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
         //Checking to see if pizza has proper toppings on it (Idk how to do this)
         //Checking to see if pizza is baked
+        if (_pizzaInfo.isBaked == false)
+        {
+            return;
+        }
         if (_pizzaInfo.isBaked && _pizzaInfo.armTopping == thisPizzaInfo.armTopping && _pizzaInfo.eyeballTopping == thisPizzaInfo.eyeballTopping && _pizzaInfo.legTopping == thisPizzaInfo.legTopping)
         {
             Debug.Log("Pizza Baked, cooked properly, and Delivered");
             deliveryText.text = "Order Complete!";
             
-        }
-        else if (_pizzaInfo.isBaked == false)
-        {
-            Debug.Log("Pizza not baked!");
         }
         Destroy(pizza);
         GiveNextOrder();
