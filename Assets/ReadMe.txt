@@ -9,6 +9,7 @@ after narrowly escaping your life on the grounds that you're a chef, you must ma
 
 This project was created under the constraint to make something based around accessibility. We chose to create a game accessible for those that only have use of one of their hands. It's also played while sitting, which allows for those in wheelchairs, or can't stand for long periods of time. 
 
+Players spawn in and watch the cutscene, and start the game by picking up the chef hat with their hand of choice. They press a button and spawn a pizza, put toppings on, bake it, and deliver.
 
 
 
