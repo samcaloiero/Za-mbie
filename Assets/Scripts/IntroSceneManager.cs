@@ -10,6 +10,9 @@ public class IntroSceneManager : MonoBehaviour
     //Attach next level scene name here
     public string nextLevel;
     public SOSceneManager _SoSceneManager;
+    
+    public bool sceneLoad = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,17 +20,25 @@ public class IntroSceneManager : MonoBehaviour
         _SoSceneManager.rightHand = true;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("LeftHand"))
-        {
-            _SoSceneManager.rightHand = false;
-        }
-        else if (other.gameObject.CompareTag("rightHand"))
-        {
-            _SoSceneManager.leftHand = false;
-        }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.CompareTag("LeftHand"))
+    //     {
+    //         _SoSceneManager.rightHand = false;
+    //     }
+    //     else if (other.gameObject.CompareTag("rightHand"))
+    //     {
+    //         _SoSceneManager.leftHand = false;
+    //     }
+    //
+    //     UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
+    // }
 
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
+    private void Update()
+    {
+        if (sceneLoad)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
+        }
     }
 }
