@@ -1098,7 +1098,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d84c8a6847b7354458b42b7984a8f3cb, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -5680,7 +5680,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderText: {fileID: 0}
+  orderPizzaInfo: {fileID: 0}
   deliveryText: {fileID: 785718864708089382}
+  _SoSceneManager: {fileID: 0}
 --- !u!114 &785718864783338453
 MonoBehaviour:
   m_ObjectHideFlags: 0
