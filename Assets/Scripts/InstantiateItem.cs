@@ -7,7 +7,8 @@ public class InstantiateItem : MonoBehaviour
     public GameObject itemToSpawn;
     public void SpawnItem()
     {
-        Debug.Log("Spawn Pizza");
+        Debug.Log("Spawn Item");
+        //Fix Spawn in Scaling
         Instantiate(itemToSpawn, transform);
     }
 }

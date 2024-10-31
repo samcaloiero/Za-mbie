@@ -24,7 +24,7 @@ public class SceneManager : MonoBehaviour
     private float minutes;
     private float seconds;
 
-
+    [Header("Left and Right VR Hands")]
     public GameObject leftHand;
 
     public GameObject rightHand;
@@ -36,11 +36,11 @@ public class SceneManager : MonoBehaviour
         _SoSceneManager.correctPizzasMade = 0;
         
         //Find out which hand to activate to true
-        if (_SoSceneManager.leftHand = false)
+        if (_SoSceneManager.leftHand == false)
         {
             leftHand.SetActive(false);
         }
-        else if (_SoSceneManager.rightHand = false)
+        else if (_SoSceneManager.rightHand == false)
         {
             rightHand.SetActive(false);
         }

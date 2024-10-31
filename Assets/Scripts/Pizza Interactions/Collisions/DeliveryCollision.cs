@@ -11,6 +11,7 @@ public class DeliveryCollision : MonoBehaviour
     public TextMeshPro orderText;
 
     public TextMeshPro deliveryText;
+    public SOSceneManager _SoSceneManager;
     private void Awake()
     {
         thisPizzaInfo = GetComponent<PizzaInfo>();
@@ -60,7 +61,7 @@ public class DeliveryCollision : MonoBehaviour
 
     public void GiveNextOrder()
     {
-        
+        _SoSceneManager.isThereAPizzaOrder = false;
     }
 
 }
