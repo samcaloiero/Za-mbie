@@ -15,8 +15,14 @@ public class PizzaInfo : MonoBehaviour
     public int eyeballTopping;
     public int legTopping;
 
+    private void Awake()
+    {
+        armTopping = 0;
+        eyeballTopping = 0;
+        legTopping = 0;
+        isBaked = false;
+    }
 
-    
     private void OnCollisionEnter(Collision other)
     {
         if (gameObject.CompareTag("Pizza"))

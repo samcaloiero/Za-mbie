@@ -32,6 +32,7 @@ public class SceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _SoSceneManager.isThereAPizzaOrder = true;
         
         _SoSceneManager.correctPizzasMade = 0;
         

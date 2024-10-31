@@ -15,7 +15,6 @@ public class DeliveryCollision : MonoBehaviour
     private void Awake()
     {
         thisPizzaInfo = GetComponent<PizzaInfo>();
-        SetOrderText();
     }
 
     //This script needs applied to the area where pizzas need delivered to
@@ -47,26 +46,25 @@ public class DeliveryCollision : MonoBehaviour
         {
             return;
         }
-        if (_pizzaInfo.isBaked && _pizzaInfo.armTopping == thisPizzaInfo.armTopping && _pizzaInfo.eyeballTopping == thisPizzaInfo.eyeballTopping && _pizzaInfo.legTopping == thisPizzaInfo.legTopping)
+        if (_pizzaInfo.armTopping == thisPizzaInfo.armTopping && _pizzaInfo.eyeballTopping == thisPizzaInfo.eyeballTopping && _pizzaInfo.legTopping == thisPizzaInfo.legTopping)
         {
             Debug.Log("Pizza Baked, cooked properly, and Delivered");
             deliveryText.text = "Order Complete!";
-            
         }
         Destroy(pizza);
         GiveNextOrder();
     }
     
     
-    void SetOrderText()
-    {
-        orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
-                          thisPizzaInfo.legTopping + " Leg Toppings");
-    }
+    // void SetOrderText()
+    // {
+    //     orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
+    //                       thisPizzaInfo.legTopping + " Leg Toppings");
+    // }
 
     public void GiveNextOrder()
     {
-        _SoSceneManager.isThereAPizzaOrder = false;
+        _SoSceneManager.isThereAPizzaOrder = true;
     }
 
 }

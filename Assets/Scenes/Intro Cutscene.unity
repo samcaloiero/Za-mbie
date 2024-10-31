@@ -803,6 +803,20 @@ CapsuleCollider:
   m_Height: 0.12316466
   m_Direction: 1
   m_Center: {x: -0.0006620655, y: 0.0007647597, z: -0.0040912903}
+--- !u!114 &617554963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617554952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53e9e7e92c47c24ab593ff190a8c619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: Cool Scene
+  _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
 --- !u!1 &694547355
 GameObject:
   m_ObjectHideFlags: 0
@@ -11432,7 +11446,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1970885738}
-  - component: {fileID: 1970885737}
   - component: {fileID: 1970885739}
   m_Layer: 0
   m_Name: Scene Manager
@@ -11441,20 +11454,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1970885737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970885736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f53e9e7e92c47c24ab593ff190a8c619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextLevel: Cool Scene
-  _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
 --- !u!4 &1970885738
 Transform:
   m_ObjectHideFlags: 0

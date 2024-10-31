@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Sam Scene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Intro Cutscene.unity
+    guid: 406dfbee1ddb86049b075141d45a49b2
+  - enabled: 1
+    path: Assets/Scenes/Cool Scene.unity
+    guid: 0b8b8680557c53340b8dc07e098f4f19
+  - enabled: 1
+    path: Assets/Scenes/death scene.unity
+    guid: 1940cab2500f3bc4cb48aed013539e7e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dd59bd8d6f9144c4da2ff3e4697d09be, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d2ef75768583ea249a14559619980c33, type: 2}
