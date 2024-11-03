@@ -24,3 +24,8 @@ Stylized - Simple Hands by sametsylmz3d on the Unity Asset Store
 
 "Stylized Oven" (https://skfb.ly/6VYQJ) by yeeyeeman is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Severed Arm" https://sketchfab.com/3d-models/severed-arm-e1ef8be743014d40aa65effa13c56779#download) by Rsorer152
+
+"Eyeball" (https://www.turbosquid.com/3d-models/3d-16-colors-of-realistic-eye-demo-free-model-1765448) by Davlet
+
+"Foot" (https://free3d.com/3d-model/foot-v3--336092.html) by printable_models
