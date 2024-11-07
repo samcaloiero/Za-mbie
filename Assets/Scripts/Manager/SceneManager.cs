@@ -29,9 +29,21 @@ public class SceneManager : MonoBehaviour
 
     public GameObject rightHand;
    
+    [Header("Number of Topping Type Permitted")] 
+    public int eyeBalls;
+
+    public int arms;
+
+    public int legs;
+
+    [Tooltip("The amount of toppings on each pizza")]
+    public int toppingsAmount;
+
+    private PizzaInfo orderPizzaInfo;
     // Start is called before the first frame update
     void Start()
     {
+        orderPizzaInfo = GetComponent<PizzaInfo>();
         _SoSceneManager.isThereAPizzaOrder = true;
         
         _SoSceneManager.correctPizzasMade = 0;
@@ -64,6 +76,14 @@ public class SceneManager : MonoBehaviour
         {
             PlayLosingSequence();
         }
+        if (_SoSceneManager.isThereAPizzaOrder)
+        {
+            Debug.Log("Generating a Pizza Order");
+            GeneratePizza(orderPizzaInfo);
+            _SoSceneManager.isThereAPizzaOrder = false;
+            
+        }
+        
     }
 
     private void PlayLosingSequence()
@@ -91,5 +111,61 @@ public class SceneManager : MonoBehaviour
        {
            PlayLosingSequence();
        }
+    }
+    
+    public void GeneratePizza(PizzaInfo pizzaInfo)
+    {
+        // Reset toppings
+        pizzaInfo.eyeballTopping = 0;
+        pizzaInfo.armTopping = 0;
+        pizzaInfo.legTopping = 0;
+
+        int remainingToppings = toppingsAmount;
+
+        while (remainingToppings > 0)
+        {
+            // Decide which topping to add
+            int toppingType = Random.Range(0, 3); // 0: eyeball, 1: arm, 2: leg
+
+            switch (toppingType)
+            {
+                case 0: // Eyeball Topping
+                    if (pizzaInfo.eyeballTopping < eyeBalls)
+                    {
+                        pizzaInfo.eyeballTopping++;
+                        remainingToppings--;
+                    }
+                    break;
+                case 1: // Arm Topping
+                    if (pizzaInfo.armTopping < arms)
+                    {
+                        pizzaInfo.armTopping++;
+                        remainingToppings--;
+                    }
+                    break;
+                case 2: // Leg Topping
+                    if (pizzaInfo.legTopping < legs)
+                    {
+                        pizzaInfo.legTopping++;
+                        remainingToppings--;
+                    }
+                    break;
+            }
+
+            // Prevent infinite loop if no toppings can be added
+            if (!CanAddMoreToppings(pizzaInfo))
+            {
+                break;
+            }
+        }
+
+        Debug.Log($"Pizza Generated: Eyeballs={pizzaInfo.eyeballTopping}, Arms={pizzaInfo.armTopping}, Legs={pizzaInfo.legTopping}");
+    }
+
+    private bool CanAddMoreToppings(PizzaInfo pizzaInfo)
+    {
+        return (pizzaInfo.eyeballTopping < eyeBalls) ||
+               (pizzaInfo.armTopping < arms) ||
+               (pizzaInfo.legTopping < legs);
     }
 }

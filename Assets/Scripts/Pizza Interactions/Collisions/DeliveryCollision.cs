@@ -7,14 +7,12 @@ using UnityEngine;
 public class DeliveryCollision : MonoBehaviour
 {
 
-    private PizzaInfo thisPizzaInfo;
-    public TextMeshPro orderText;
+    public PizzaInfo thisPizzaInfo;
     public PizzaInfo orderPizzaInfo;
     public TextMeshPro deliveryText;
     public SOSceneManager _SoSceneManager;
     private void Awake()
     {
-        thisPizzaInfo = GetComponent<PizzaInfo>();
     }
 
     //This script needs applied to the area where pizzas need delivered to
@@ -64,6 +62,7 @@ public class DeliveryCollision : MonoBehaviour
 
     public void GiveNextOrder()
     {
+        _SoSceneManager.correctPizzasMade++;
         _SoSceneManager.isThereAPizzaOrder = true;
     }
 

@@ -2,26 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DisplayOrder : MonoBehaviour
 {
     public TextMeshPro orderText;
 
-    private PizzaInfo _pizzaInfo;
+    [FormerlySerializedAs("_pizzaInfo")] public PizzaInfo orderPizzaInfo;
     // Start is called before the first frame update
     void Start()
     {
-        _pizzaInfo = GetComponent<PizzaInfo>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       SetOrderText(_pizzaInfo); 
+       SetOrderText(orderPizzaInfo); 
     }
     void SetOrderText(PizzaInfo thisPizzaInfo)
     {
-        orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
-                          thisPizzaInfo.legTopping + " Leg Toppings");
+        if (thisPizzaInfo != false)
+        {
+            orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
+                              thisPizzaInfo.legTopping + " Leg Toppings");
+        }
+        
     }
 }

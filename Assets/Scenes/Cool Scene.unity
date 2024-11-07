@@ -2953,6 +2953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846779852}
   - component: {fileID: 846779851}
+  - component: {fileID: 846779853}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2980,6 +2981,10 @@ MonoBehaviour:
   minutesTimer: {fileID: 1465373998}
   leftHand: {fileID: 1555280107}
   rightHand: {fileID: 334364724}
+  eyeBalls: 2
+  arms: 2
+  legs: 2
+  toppingsAmount: 5
 --- !u!4 &846779852
 Transform:
   m_ObjectHideFlags: 0
@@ -2995,6 +3000,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &846779853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846779850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b564aefd80d375d47a1cabd67ca1992f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBaked: 0
+  armTopping: 0
+  eyeballTopping: 0
+  legTopping: 0
 --- !u!1 &896967481
 GameObject:
   m_ObjectHideFlags: 0
@@ -3011,7 +3032,7 @@ GameObject:
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &896967482
 Transform:
   m_ObjectHideFlags: 0
@@ -4664,22 +4685,6 @@ MonoBehaviour:
   armTopping: 0
   eyeballTopping: 0
   legTopping: 0
---- !u!114 &1476237985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523052186286316676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b564aefd80d375d47a1cabd67ca1992f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isBaked: 0
-  armTopping: 0
-  eyeballTopping: 0
-  legTopping: 0
 --- !u!1 &1555280107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8018733523124192915, guid: c603746cca317714d89ed829ba01171d, type: 3}
@@ -5804,7 +5809,6 @@ GameObject:
   - component: {fileID: 523052186286316675}
   - component: {fileID: 523052186286316672}
   - component: {fileID: 523052186286316673}
-  - component: {fileID: 1476237985}
   - component: {fileID: 523052186286316677}
   m_Layer: 0
   m_Name: status screen
@@ -5826,6 +5830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orderText: {fileID: 657806988}
+  orderPizzaInfo: {fileID: 846779853}
 --- !u!33 &727991034233583418
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6020,26 +6025,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f37a4e661f06542b76b843a05c8f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderText: {fileID: 0}
+  thisPizzaInfo: {fileID: 846779853}
   orderPizzaInfo: {fileID: 663818064}
   deliveryText: {fileID: 785718864708089382}
   _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
---- !u!114 &785718864783338453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785718864783338463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b564aefd80d375d47a1cabd67ca1992f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isBaked: 1
-  armTopping: 2
-  eyeballTopping: 2
-  legTopping: 2
 --- !u!65 &785718864783338456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6131,7 +6120,6 @@ GameObject:
   - component: {fileID: 785718864783338457}
   - component: {fileID: 785718864783338456}
   - component: {fileID: 785718864783338452}
-  - component: {fileID: 785718864783338453}
   m_Layer: 0
   m_Name: Delivery Area Collision Zone
   m_TagString: Untagged
