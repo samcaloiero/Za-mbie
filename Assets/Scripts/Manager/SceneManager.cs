@@ -20,6 +20,7 @@ public class SceneManager : MonoBehaviour
     public SOSceneManager _SoSceneManager;
 
     public TextMeshPro minutesTimer;
+    public TextMeshPro ordersLeft;
     
     private float minutes;
     private float seconds;
@@ -62,6 +63,7 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DisplayOrdersLeft();
         //change round if user makes enough pizzas
         if (numPizzasRequired == _SoSceneManager.correctPizzasMade)
         {
@@ -167,5 +169,10 @@ public class SceneManager : MonoBehaviour
         return (pizzaInfo.eyeballTopping < eyeBalls) ||
                (pizzaInfo.armTopping < arms) ||
                (pizzaInfo.legTopping < legs);
+    }
+
+    void DisplayOrdersLeft()
+    {
+        ordersLeft.text = ("Orders Left: " + (numPizzasRequired - _SoSceneManager.correctPizzasMade));
     }
 }

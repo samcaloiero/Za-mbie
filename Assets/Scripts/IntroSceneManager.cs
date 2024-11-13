@@ -20,19 +20,19 @@ public class IntroSceneManager : MonoBehaviour
         _SoSceneManager.rightHand = true;
     }
 
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.gameObject.CompareTag("LeftHand"))
-    //     {
-    //         _SoSceneManager.rightHand = false;
-    //     }
-    //     else if (other.gameObject.CompareTag("rightHand"))
-    //     {
-    //         _SoSceneManager.leftHand = false;
-    //     }
-    //
-    //     UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
-    // }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("LeftHand"))
+        {
+            _SoSceneManager.rightHand = false;
+        }
+        else if (other.gameObject.CompareTag("rightHand"))
+        {
+            _SoSceneManager.leftHand = false;
+        }
+    
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
+    }
 
     private void Update()
     {
