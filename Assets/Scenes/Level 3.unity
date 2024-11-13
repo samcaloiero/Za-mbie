@@ -3279,18 +3279,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb60147e06bdaa649a77c680185901bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundTime: 90
-  numPizzasRequired: 5
+  roundTime: 60
+  numPizzasRequired: 10
   sceneToAdvTo: 
   losingScene: death scene
   _SoSceneManager: {fileID: 11400000, guid: 6c8ecb7db85f78c49a28b366ceb63f1f, type: 2}
   minutesTimer: {fileID: 1465373998}
   leftHand: {fileID: 1555280107}
   rightHand: {fileID: 334364724}
-  eyeBalls: 4
-  arms: 4
-  legs: 4
-  toppingsAmount: 10
+  eyeBalls: 6
+  arms: 6
+  legs: 6
+  toppingsAmount: 12
 --- !u!4 &846779852
 Transform:
   m_ObjectHideFlags: 0
