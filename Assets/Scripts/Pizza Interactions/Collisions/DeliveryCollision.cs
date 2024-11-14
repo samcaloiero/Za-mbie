@@ -11,11 +11,11 @@ public class DeliveryCollision : MonoBehaviour
     public PizzaInfo orderPizzaInfo;
     public TextMeshPro deliveryText;
     public SOSceneManager _SoSceneManager;
-    private void Awake()
-    {
-    }
+    
+    public ParticleSystem correctPizzaFX;
+    public ParticleSystem incorrectPizzaFX;
 
-    //This script needs applied to the area where pizzas need delivered to
+   
     private void OnTriggerExit(Collider other)
     {   
         //Checking to see if the object passing through trigger is a pizza
@@ -48,6 +48,11 @@ public class DeliveryCollision : MonoBehaviour
         {
             Debug.Log("Pizza Baked, cooked properly, and Delivered");
             deliveryText.text = "Order Complete!";
+            correctPizzaFX.Play();
+        }
+        else
+        {
+            incorrectPizzaFX.Play();
         }
         Destroy(pizza);
         GiveNextOrder();

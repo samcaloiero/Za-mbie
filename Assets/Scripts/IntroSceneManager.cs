@@ -11,7 +11,6 @@ public class IntroSceneManager : MonoBehaviour
     public string nextLevel;
     public SOSceneManager _SoSceneManager;
     
-    public bool sceneLoad = false;
     
     // Start is called before the first frame update
     void Start()
@@ -25,20 +24,18 @@ public class IntroSceneManager : MonoBehaviour
         if (other.gameObject.CompareTag("LeftHand"))
         {
             _SoSceneManager.rightHand = false;
+            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
         }
-        else if (other.gameObject.CompareTag("rightHand"))
+        else if (other.gameObject.CompareTag("RightHand"))
         {
             _SoSceneManager.leftHand = false;
+            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
         }
     
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
+    
     }
 
     private void Update()
     {
-        if (sceneLoad)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(nextLevel);
-        }
     }
 }
