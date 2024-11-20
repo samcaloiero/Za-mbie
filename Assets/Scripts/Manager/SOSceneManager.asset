@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ee25d68e6d7ae41a4ca1a81c22d212, type: 3}
   m_Name: SOSceneManager
   m_EditorClassIdentifier: 
-  correctPizzasMade: 3
+  correctPizzasMade: 0
   leftHand: 1
-  rightHand: 1
+  rightHand: 0
   isThereAPizzaOrder: 0
