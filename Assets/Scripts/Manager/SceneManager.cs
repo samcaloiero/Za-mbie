@@ -67,8 +67,7 @@ public class SceneManager : MonoBehaviour
         //change round if user makes enough pizzas
         if (numPizzasRequired == _SoSceneManager.correctPizzasMade)
         {
-            Debug.Log("Advance to Next Round");
-            //Putting UnityEngine here bc of the name of your script
+            //Putting UnityEngine here bc of the name of the script
             UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneToAdvTo);
         }
         //Count Down Timer
@@ -78,9 +77,9 @@ public class SceneManager : MonoBehaviour
         {
             PlayLosingSequence();
         }
+        //generating a pizza order here
         if (_SoSceneManager.isThereAPizzaOrder)
         {
-            Debug.Log("Generating a Pizza Order");
             GeneratePizza(orderPizzaInfo);
             _SoSceneManager.isThereAPizzaOrder = false;
             
