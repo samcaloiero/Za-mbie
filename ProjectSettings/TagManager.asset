@@ -10,11 +10,13 @@ TagManager:
   - Eyeball
   - Leg
   - Ticket
+  - RightHand
+  - LeftHand
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HighFiveArm
   - Water
   - UI
   - Camera

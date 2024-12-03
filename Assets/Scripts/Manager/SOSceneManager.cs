@@ -15,4 +15,6 @@ public class SOSceneManager : ScriptableObject
 
     public bool grabbingToppings;
 
+    public bool pizzaBaking;
+
 }

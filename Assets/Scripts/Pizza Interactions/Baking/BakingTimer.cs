@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class BakingTimer : MonoBehaviour
 {
-    public int countdownTime = 10;
+    public SOSceneManager _SoSceneManager;
+    public int currentTime;
+    public int countdownTime = 15;
     public TextMeshPro timerText;
     public GameObject flamesPS;
     public Material grateMaterial;
@@ -48,13 +50,13 @@ public class BakingTimer : MonoBehaviour
 
     IEnumerator StartTimer(GameObject pizza)
     {
-       
+        _SoSceneManager.pizzaBaking = true;
         PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
         if (_pizzaInfo.isBaked)
         {
             yield break;
         }
-        int currentTime = countdownTime;
+        currentTime = countdownTime;
         flamesPS.SetActive(true);
         Color color = grateMaterial.color;
         color.a = 1;
@@ -75,6 +77,7 @@ public class BakingTimer : MonoBehaviour
         {
             if (_pizzaInfo != null)
             {
+                _SoSceneManager.pizzaBaking = false;
                 //if the pizza has this variable, it gets set to true
                 _pizzaInfo.isBaked = true;
                 timerText.text = "Pizza Baked";
@@ -88,5 +91,9 @@ public class BakingTimer : MonoBehaviour
         //timerGameObject.gameObject.transform.localScale = (startingLength.x, startingLength.y, startingLength.z);
         //Get access to pizza info isBaked an
 
+    }
+    public void DecreaseCurrentTime(int amount)
+    {
+        currentTime = Mathf.Max(0, currentTime - amount); // Ensure timer doesn't go below 0
     }
 }
