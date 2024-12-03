@@ -46,6 +46,8 @@ public class SceneManager : MonoBehaviour
     {
         orderPizzaInfo = GetComponent<PizzaInfo>();
         _SoSceneManager.isThereAPizzaOrder = true;
+
+        _SoSceneManager.grabbingToppings = false;
         
         _SoSceneManager.correctPizzasMade = 0;
         

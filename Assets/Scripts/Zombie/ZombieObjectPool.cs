@@ -7,6 +7,8 @@ public class ZombieObjectPool : MonoBehaviour
     public SOSceneManager _SoSceneManager;
     public GameObject [] zombie;
     public SceneManager _SceneManager;
+
+    private int lastCorrectPizzasMade = 0;
     void Start()
     {
         //setting all zombies false
@@ -24,6 +26,28 @@ public class ZombieObjectPool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (_SoSceneManager.correctPizzasMade > lastCorrectPizzasMade)
+        {
+            DeactivateRandomActiveZombie();
+            lastCorrectPizzasMade = _SoSceneManager.correctPizzasMade;
+        }
+    }
+
+    public void DeactivateRandomActiveZombie()
+    {
+        List<GameObject> activeZombies = new List<GameObject>();
+        foreach (GameObject z in zombie)
+        {
+            if (z.activeSelf)
+            {
+                activeZombies.Add(z);
+            }
+        }
+
+        if (activeZombies.Count > 0)
+        {
+            int randomIndex = Random.Range(0, activeZombies.Count);
+            activeZombies[randomIndex].SetActive(false);
+        }
     }
 }

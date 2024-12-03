@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ToppingsCollision : MonoBehaviour
 {
+    public SOSceneManager _SoSceneManager;
     private Rigidbody _rigidbody;
     void Start()
     {
@@ -14,7 +15,7 @@ public class ToppingsCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Pizza"))
+        if (other.gameObject.CompareTag("Pizza") && _SoSceneManager.grabbingToppings == false)
         {
             //Disable Rigid Body
             Debug.Log("Collision Succesful");
@@ -26,5 +27,16 @@ public class ToppingsCollision : MonoBehaviour
             transform.SetParent(other.gameObject.transform);
         }
     }
-    
+
+    public void SetGrabbingToppingsTrue()
+    {
+        Debug.Log("Topping Getting Grabbed");
+        _SoSceneManager.grabbingToppings = true;
+    }
+
+    public void SetGrabbingToppingsFalse()
+    {
+        Debug.Log("Topping Let Go");
+        _SoSceneManager.grabbingToppings = false;
+    }
 }
