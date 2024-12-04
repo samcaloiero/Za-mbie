@@ -9,6 +9,6 @@ public class InstantiateItem : MonoBehaviour
     {
         Debug.Log("Spawn Item");
         //Fix Spawn in Scaling
-        Instantiate(itemToSpawn, transform);
+        Instantiate(itemToSpawn, transform.position, Quaternion.identity);
     }
 }
