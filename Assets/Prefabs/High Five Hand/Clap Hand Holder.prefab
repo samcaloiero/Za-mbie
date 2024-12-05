@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4916645375076958456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8100446067859073896}
+  m_Layer: 0
+  m_Name: Clap Hand Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8100446067859073896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4916645375076958456}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.007, y: 1.57, z: 2.034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2189666794082577133}
+  - {fileID: 4210225530909189647}
+  - {fileID: 5506114790763735439}
+  - {fileID: 1623716699206155115}
+  - {fileID: 3699532836840494112}
+  - {fileID: 5679401522312999965}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &68072270721157169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2850001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.37199986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2361563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.11188258
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.96358895
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.05664663
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 9.324
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -153.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -11.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &2189666794082577133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 68072270721157169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &583793101792631223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1625212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5824478
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.69518566
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2572745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0148890745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9593739
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1148478
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -149.422
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 5.147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &1623716699206155115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 583793101792631223}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2665898810059670739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06565323
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5108251
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09063268
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.06449599
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.055830613
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9963115
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.009313361
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -187.326
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 6.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &4210225530909189647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 2665898810059670739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3298311150032418556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7149999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2572745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0148890745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9593739
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1148478
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -149.422
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 5.147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &3699532836840494112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 3298311150032418556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5783708924429883073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08082239
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.035474915
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.99608046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.005755532
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -189.243
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &5679401522312999965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 5783708924429883073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5979429268782713683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8100446067859073896}
+    m_Modifications:
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.062088132
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.57088625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.4815948
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.058970988
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.022154327
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9915194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.113670066
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12.874
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -187.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -3.372
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501689992429116632, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+      propertyPath: m_Name
+      value: High Five Controller (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+--- !u!4 &5506114790763735439 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2202987027562046172, guid: b91af3434ef0d004e9895e2e73b542b9, type: 3}
+  m_PrefabInstance: {fileID: 5979429268782713683}
+  m_PrefabAsset: {fileID: 0}

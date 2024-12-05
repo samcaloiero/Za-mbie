@@ -6,20 +6,24 @@ using UnityEngine;
 
 public class BakingTimer : MonoBehaviour
 {
+    public GameObject clapHandGroup;
     public SOSceneManager _SoSceneManager;
     public int currentTime;
     public int countdownTime = 15;
     public TextMeshPro timerText;
     public GameObject flamesPS;
     public Material grateMaterial;
+    public AudioSource fireAudio;
+    //public GameObject clapHandHolder;
 
 
     private float growLength;
     void Start()
     {
+        _SoSceneManager.pizzaBaking = false;
+        //clapHandHolder.SetActive(false);
         flamesPS.SetActive(false);
         timerText.text = "Baking Timer";
-        
         //alpha of grate off
         Color color = grateMaterial.color;
         color.a = 0;
@@ -51,6 +55,14 @@ public class BakingTimer : MonoBehaviour
     IEnumerator StartTimer(GameObject pizza)
     {
         _SoSceneManager.pizzaBaking = true;
+        if (_SoSceneManager.pizzaBaking)
+        {
+            Instantiate(clapHandGroup); 
+        }
+        
+        //clapHandHolder.SetActive(true);
+        
+        fireAudio.Play();
         PizzaInfo _pizzaInfo = pizza.GetComponent<PizzaInfo>();
         if (_pizzaInfo.isBaked)
         {
@@ -73,7 +85,7 @@ public class BakingTimer : MonoBehaviour
             currentTime--;
         }
 
-        if (currentTime == 0)
+        if (currentTime <= 0)
         {
             if (_pizzaInfo != null)
             {
@@ -81,6 +93,7 @@ public class BakingTimer : MonoBehaviour
                 //if the pizza has this variable, it gets set to true
                 _pizzaInfo.isBaked = true;
                 timerText.text = "Pizza Baked";
+                fireAudio.Stop();
                 flamesPS.SetActive(false);
                 color.a = 0;
                 grateMaterial.color = color;

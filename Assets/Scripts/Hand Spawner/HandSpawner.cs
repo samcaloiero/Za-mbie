@@ -35,7 +35,7 @@ public class HandSpawner : MonoBehaviour
         while (_SoSceneManager.pizzaBaking)
         {
             Vector3 randomSpawnPosition =
-                new Vector3(Random.Range(0f, 2f), Random.Range(0f, 2f), Random.Range(0f, 2f));
+                new Vector3(Random.Range(-2f, 2f), Random.Range(0f, 2f), Random.Range(-2f, 2f));
             Instantiate(highFiveController, randomSpawnPosition, Quaternion.identity);
             yield return new WaitForSeconds(spawnInterval);
         }

@@ -12,6 +12,7 @@ TagManager:
   - Ticket
   - RightHand
   - LeftHand
+  - ClapHand
   layers:
   - Default
   - TransparentFX

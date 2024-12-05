@@ -23,8 +23,8 @@ public class DisplayOrder : MonoBehaviour
     {
         if (thisPizzaInfo != false)
         {
-            orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings" + "    " + thisPizzaInfo.eyeballTopping + " Eyeball Toppings" + "    " +
-                              thisPizzaInfo.legTopping + " Leg Toppings");
+            orderText.text = (thisPizzaInfo.armTopping + " Arm Toppings\n" + thisPizzaInfo.eyeballTopping + " Eyeball Toppings\n" +
+                              thisPizzaInfo.legTopping + " Leg Toppings\n");
         }
         
     }

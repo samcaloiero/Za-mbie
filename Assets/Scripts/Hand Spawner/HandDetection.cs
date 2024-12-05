@@ -7,6 +7,7 @@ public class HandDetection : MonoBehaviour
 {
     public BakingTimer _bakingTimer;
     public int timeReduction = 2;
+    public GameObject clapFX;
     private void Awake()
     {
         _bakingTimer = FindObjectOfType<BakingTimer>();
@@ -25,6 +26,8 @@ public class HandDetection : MonoBehaviour
             {
                 _bakingTimer.DecreaseCurrentTime(timeReduction);
             }
+
+            clapFX.SetActive(true);
             Destroy(this.gameObject);
         }
     }
