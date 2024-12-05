@@ -24,6 +24,7 @@ public class HandDetection : MonoBehaviour
             Debug.Log("Hands Collide!");
             if (_bakingTimer != null)
             {
+                StartCoroutine(ChangeTextColorTemporarily(Color.green, .1f));
                 _bakingTimer.DecreaseCurrentTime(timeReduction);
             }
 
@@ -32,6 +33,17 @@ public class HandDetection : MonoBehaviour
         }
     }
 
+    private IEnumerator ChangeTextColorTemporarily(Color color, float duration)
+    {
+        Color originalColor = _bakingTimer.timerText.color;
+
+        _bakingTimer.timerText.color = color;
+
+        yield return new WaitForSeconds(duration);
+
+        _bakingTimer.timerText.color = originalColor;
+
+    }
     private void ChangeTimes()
     {
         //decrease pizza wait time

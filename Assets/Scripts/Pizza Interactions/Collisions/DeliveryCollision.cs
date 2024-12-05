@@ -15,6 +15,7 @@ public class DeliveryCollision : MonoBehaviour
     public ParticleSystem incorrectPizzaFX;
     public AudioSource zombieEating;
     public AudioSource madZombie;
+    public AudioSource morePizza;
 
     private void Awake()
     {
@@ -56,6 +57,7 @@ public class DeliveryCollision : MonoBehaviour
             Debug.Log("Correct Pizza Made");
             correctPizzaFX.Play();
             zombieEating.Play();
+            morePizza.Play();
             GiveNextOrder();
             
         }
