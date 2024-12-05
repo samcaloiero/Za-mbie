@@ -18,6 +18,7 @@ public class MoveTowardsUser : MonoBehaviour
         }
 
         speed = Random.Range(.2f, .6f);
+        StartCoroutine(DestroyArm());
     }
 
     // Update is called once per frame
@@ -28,5 +29,9 @@ public class MoveTowardsUser : MonoBehaviour
         transform.forward = player.transform.position - transform.position;
     }
 
+    IEnumerator DestroyArm()
+    {
+        yield return new WaitForSeconds(6.0f);
+    }
     
 }
